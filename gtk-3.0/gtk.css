@@ -1,0 +1,143 @@
+/* Theme */
+@define-color bg_color white;
+@define-color fg_color black;
+@define-color accent_color #09f;
+@define-color accent_color_contrast white;
+@define-color destructive_color #d11;
+@define-color destructive_color_contrast white;
+
+/* Required by GTK? */
+@define-color borders @fg_color;
+@define-color theme_fg_color @fg_color;
+@define-color theme_text_color @fg_color;
+@define-color theme_bg_color @bg_color;
+@define-color theme_base_color @bg_color;
+@define-color theme_selected_bg_color @accent_color;
+@define-color theme_selected_fg_color white;
+@define-color insensitive_fg_color alpha(@fg_color, 0.5);
+
+* {
+    /*border: 1px solid alpha(red, 0.25);*/
+    /*color: @fg_color;*/
+}
+
+frame,
+.frame {
+    border: 1px solid alpha(@fg_color, 0.25);
+}
+
+window,
+dialog,
+messagedialog,
+menu,
+popover,
+.background,
+.csd {
+    background-color: @bg_color;
+    color: @fg_color;
+}
+
+button,
+switch,
+switch slider {
+    background-color: alpha(@fg_color, 0.05);
+    border: 1px solid alpha(@fg_color, 0.25);
+    border-radius: 0.25em;
+    padding: 0.25em;
+}
+
+switch,
+switch slider {
+    padding: 0;
+}
+
+switch slider {
+    background-color: shade(@bg_color, 0.95);
+}
+
+button:active {
+    background-color: alpha(@fg_color, 0.125);
+}
+
+.suggested-action {
+    background-color: @accent_color;
+    color: @accent_color_contrast;
+}
+
+.suggested-action:active {
+    background-color: shade(@accent_color, 0.9);
+}
+
+.destructive-action {
+    background-color: @destructive_color;
+    color: @destructive_color_contrast;
+}
+
+.destructive-action:active {
+    background-color: shade(@destructive_color, 0.9);
+}
+
+.titlebar {
+    background-color: mix(@bg_color, @fg_color, 0.15);
+    border-radius: 0.25em 0.25em 0 0;
+    padding: 0.5em;
+}
+
+decoration {
+    border-radius: 0.25em 0.25em 0 0;
+    box-shadow:
+        0 0 0 1px alpha(@fg_color, 0.5),
+        0 14px 28px rgba(0, 0, 0, 0.35),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    margin: 12px;
+}
+
+entry,
+.entry {
+    background-color: @bg_color;
+    border: 1px solid @fg_color;
+    border-radius: 0.25em;
+    padding: 0.25em;
+}
+
+popover,
+menu {
+    background-color: @bg_color;
+    border: 1px solid alpha(@fg_color, 0.25);
+    border-radius: 0.25em;
+}
+
+separator {
+    background-color: alpha(@fg_color, 0.25);
+}
+
+tooltip decoration {
+    border-radius: 0.25em;
+    box-shadow:
+        0 1px 3px alpha (black, 0.12),
+        0 1px 2px alpha (black, 0.24);
+    margin: 0;
+}
+
+.panel {
+    background-color: black;
+    color: white;
+}
+
+/* STATES */
+
+:disabled {
+    opacity: 0.5;
+}
+
+:focus {
+    border-color: @accent_color;
+}
+
+selection,
+:selected {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+    text-shadow: none;
+}
+

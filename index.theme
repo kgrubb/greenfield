@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Greenfield
+Comment=elementary desktop default theme
+Encoding=UTF-8
+
+Name[en_US]=Greenfield
+
+[X-GNOME-Metatheme]
+GtkTheme=Greenfield
+IconTheme=elementary
+CursorTheme=elementary
+ButtonLayout=close:maximize
