@@ -9,7 +9,9 @@ Experimental GTK stylesheet from scratch
 - Use `em`s to keep anything related to text based on the font size
 - Use `px` to define strokes
 - Write and design with dark styling a consideration from the start
+- Play with a build system
 
 ## Testing
 
 Just run `./install.sh` which will create a symlink to the stylesheet in your local themes folder. To revert, run `./uninstall.sh`.
+
