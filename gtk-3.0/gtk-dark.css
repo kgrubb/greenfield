@@ -1,5 +1,5 @@
 @import url("gtk.css");
 
-@define-color bg_color black;
+@define-color bg_color shade(#333, 1.25);
 @define-color fg_color white;
 
