@@ -184,7 +184,7 @@ selection,
     border-bottom-left-radius: 0.33em;
 }
 
-.linked button:last-child
+.linked button:last-child,
 .linked entry:last-child {
     border-right-width: 1px;
     border-top-right-radius: 0.33em;
