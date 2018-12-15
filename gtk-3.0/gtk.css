@@ -87,6 +87,7 @@ button:checked {
 
 .titlebar {
     background-color: mix(@bg_color, @fg_color, 0.15);
+    border-bottom: 1px solid @borders;
     border-radius: 0.5em 0.5em 0 0;
     padding: 0.5em;
 }
