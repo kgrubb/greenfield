@@ -3,3 +3,11 @@ notebook header {
   border-bottom: 1px solid @borders;
 }
 
+notebook tab {
+  border-right: 1px solid @borders;
+  padding: 0.5em;
+}
+
+notebook tab:checked {
+  background-color: shade(@colorPrimary, 0.875);
+}

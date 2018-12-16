@@ -20,3 +20,7 @@ menu separator {
   margin: 0.25em 0;
 }
 
+popover button {
+  background-color: transparent;
+  border: none;
+}
