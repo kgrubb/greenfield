@@ -1,49 +1,49 @@
 button,
 switch,
 switch slider {
-    background-color: mix(@bg_color, @fg_color, 0.05);
-    border: 1px solid shade(@bg_color, 0.75);
-    border-radius: 0.33em;
-    padding: 0.25em;
+  background-color: mix(@bg_color, @fg_color, 0.05);
+  border: 1px solid shade(@bg_color, 0.75);
+  border-radius: 0.33em;
+  padding: 0.25em;
 }
 
 .text-button {
-    padding: 0.25em 1em;
+  padding: 0.25em 1em;
 }
 
 switch,
 switch slider {
-    padding: 0;
+  padding: 0;
 }
 
 switch slider {
-    background-color: shade(@bg_color, 0.95);
-    border: none;
-    box-shadow: 0 0 0 1px @borders;
+  background-color: shade(@bg_color, 0.95);
+  border: none;
+  box-shadow: 0 0 0 1px @borders;
 }
 
 button:active,
 button:checked {
-    background-color: shade(@bg_color, 0.875);
+  background-color: shade(@bg_color, 0.875);
 }
 
 .suggested-action {
-    background-color: @accent_color;
-    color: @accent_color_contrast;
+  background-color: @accent_color;
+  color: @accent_color_contrast;
 }
 
 .suggested-action:active,
 .suggested-action:checked {
-    background-color: shade(@accent_color, 0.9);
+  background-color: shade(@accent_color, 0.9);
 }
 
 .destructive-action {
-    background-color: @destructive_color;
-    color: @destructive_color_contrast;
+  background-color: @destructive_color;
+  color: @destructive_color_contrast;
 }
 
 .destructive-action:active,
 .destructive-action:checked {
-    background-color: shade(@destructive_color, 0.9);
+  background-color: shade(@destructive_color, 0.9);
 }
 

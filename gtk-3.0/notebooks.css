@@ -1,5 +1,5 @@
 notebook header {
-    background-color: @colorPrimary;
-    border-bottom: 1px solid @borders;
+  background-color: @colorPrimary;
+  border-bottom: 1px solid @borders;
 }
 

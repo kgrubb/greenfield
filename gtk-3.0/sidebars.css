@@ -1,0 +1,14 @@
+.sidebar {
+  background-color: @colorPrimary;
+}
+
+.sidebar row,
+.sidebar .list-row,
+.sidebar-item,
+.sidebar-row {
+  padding: 0 0.5em;
+}
+
+.sidebar label {
+  padding: 0.25em;
+}

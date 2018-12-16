@@ -1,6 +1,6 @@
 combobox arrow {
-    min-width: 1em;
-    min-height: 1em;
-    -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+  min-width: 1em;
+  min-height: 1em;
+  -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 }
 

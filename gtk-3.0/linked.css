@@ -1,19 +1,19 @@
 .linked button,
 .linked entry {
-    border-radius: 0;
-    border-right-width: 0px;
+  border-radius: 0;
+  border-right-width: 0px;
 }
 
 .linked button:first-child,
 .linked entry:first-child {
-    border-top-left-radius: 0.33em;
-    border-bottom-left-radius: 0.33em;
+  border-top-left-radius: 0.33em;
+  border-bottom-left-radius: 0.33em;
 }
 
 .linked button:last-child,
 .linked entry:last-child {
-    border-right-width: 1px;
-    border-top-right-radius: 0.33em;
-    border-bottom-right-radius: 0.33em;
+  border-right-width: 1px;
+  border-top-right-radius: 0.33em;
+  border-bottom-right-radius: 0.33em;
 }
 
