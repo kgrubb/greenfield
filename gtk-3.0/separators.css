@@ -1,0 +1,14 @@
+menu separator,
+separator.horizontal {
+    border-top: 1px solid @borders;
+}
+
+separator.vertical {
+    border-left: 1px solid @borders;
+}
+
+frame,
+.frame {
+    border: 1px solid @borders;
+}
+

@@ -1,193 +1,33 @@
 /* Theme */
 @define-color bg_color white;
 @define-color fg_color #333;
-@define-color accent_color #09f;
-@define-color accent_color_contrast white;
 @define-color destructive_color #d11;
 @define-color destructive_color_contrast white;
+@define-color borders shade(@bg_color, 0.75);
 
 /* Required by GTK? */
-@define-color borders shade(@bg_color, 0.75);
 @define-color theme_fg_color @fg_color;
 @define-color theme_text_color @fg_color;
 @define-color theme_bg_color @bg_color;
 @define-color theme_base_color @bg_color;
-@define-color theme_selected_bg_color @accent_color;
+@define-color theme_selected_bg_color @colorAccent;
 @define-color theme_selected_fg_color white;
 
-frame,
-.frame {
-    border: 1px solid @borders;
-}
+@import url("palette.css");
+@import url("brand.css");
 
-window,
-dialog,
-messagedialog,
-menu,
-popover,
-.background,
-.csd {
-    background: mix(@bg_color, @fg_color, 0.05);
-    color: @fg_color;
-}
+@import url("decorations.css");
+@import url("separators.css");
+@import url("buttons.css");
+@import url("entries.css");
+@import url("comboboxes.css");
+@import url("checkbuttons.css");
+@import url("menus.css");
+@import url("notebooks.css");
+@import url("panels.css");
+@import url("selections.css");
 
-menu,
-popover {
-    background: @bg_color;
-}
-
-button,
-switch,
-switch slider {
-    background-color: mix(@bg_color, @fg_color, 0.05);
-    border: 1px solid shade(@bg_color, 0.75);
-    border-radius: 0.33em;
-    padding: 0.25em;
-}
-
-.text-button {
-    padding: 0.25em 1em;
-}
-
-switch,
-switch slider {
-    padding: 0;
-}
-
-switch slider {
-    background-color: shade(@bg_color, 0.95);
-    border: none;
-    box-shadow: 0 0 0 1px @borders;
-}
-
-button:active,
-button:checked {
-    background-color: shade(@bg_color, 0.875);
-}
-
-.suggested-action {
-    background-color: @accent_color;
-    color: @accent_color_contrast;
-}
-
-.suggested-action:active,
-.suggested-action:checked {
-    background-color: shade(@accent_color, 0.9);
-}
-
-.destructive-action {
-    background-color: @destructive_color;
-    color: @destructive_color_contrast;
-}
-
-.destructive-action:active,
-.destructive-action:checked {
-    background-color: shade(@destructive_color, 0.9);
-}
-
-.titlebar {
-    background-color: mix(@bg_color, @fg_color, 0.15);
-    border-bottom: 1px solid @borders;
-    border-radius: 0.5em 0.5em 0 0;
-    padding: 0.5em;
-}
-
-.titlebar .image-button,
-.titlebar .titlebutton {
-    border: none;
-    background: transparent;
-}
-
-.titlebar > separator {
-    opacity: 0;
-}
-
-decoration {
-    border-radius: 0.5em 0.5em 0 0;
-    box-shadow:
-        0 0 0 1px alpha(@fg_color, 0.5),
-        0 14px 28px rgba(0, 0, 0, 0.35),
-        0 10px 10px rgba(0, 0, 0, 0.22);
-    margin: 12px;
-}
-
-entry,
-.entry {
-    background-color: @bg_color;
-    border: 1px solid @borders;
-    border-radius: 0.33em;
-    padding: 0.25em;
-}
-
-combobox arrow {
-    min-width: 1em;
-    min-height: 1em;
-    -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
-}
-
-radiobutton radio,
-checkbutton check {
-    border: 1px solid @borders;
-    background-color: @bg_color;
-}
-
-popover {
-    background-color: @bg_color;
-    border: 1px solid alpha(@fg_color, 0.25);
-    border-radius: 0.33em;
-    padding: 0.25em 0;
-}
-
-menuitem,
-.menuitem,
-modelbutton {
-    padding: 0.25em 0.5em;
-}
-
-separator {
-    background-color: @borders;
-}
-
-.panel {
-    background-color: black;
-    color: white;
-}
-
-/* STATES */
-
-button:disabled,
-switch:disabled,
-entry:disabled {
-    opacity: 0.5;
-}
-
-:focus {
-    border-color: @accent_color;
-}
-
-selection,
-:selected {
-    background-color: @theme_selected_bg_color;
-    color: @theme_selected_fg_color;
-    text-shadow: none;
-}
-
-.linked button,
-.linked entry {
-    border-radius: 0;
-    border-right-width: 0px;
-}
-
-.linked button:first-child,
-.linked entry:first-child {
-    border-top-left-radius: 0.33em;
-    border-bottom-left-radius: 0.33em;
-}
-
-.linked button:last-child,
-.linked entry:last-child {
-    border-right-width: 1px;
-    border-top-right-radius: 0.33em;
-    border-bottom-right-radius: 0.33em;
-}
+@import url("focused.css");
+@import url("linked.css");
+@import url("disabled.css");
 

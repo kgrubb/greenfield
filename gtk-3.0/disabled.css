@@ -1,0 +1,6 @@
+button:disabled,
+switch:disabled,
+entry:disabled {
+    opacity: 0.5;
+}
+

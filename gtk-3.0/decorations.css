@@ -1,0 +1,37 @@
+window,
+dialog,
+messagedialog,
+menu,
+popover,
+.background,
+.csd {
+    background: mix(@bg_color, @fg_color, 0.05);
+    color: @fg_color;
+}
+
+.titlebar {
+    background-color: @colorPrimary;
+    border-bottom: 1px solid @borders;
+    border-radius: 0.5em 0.5em 0 0;
+    padding: 0.5em;
+}
+
+.titlebar .image-button,
+.titlebar .titlebutton {
+    border: none;
+    background: transparent;
+}
+
+.titlebar > separator {
+    opacity: 0;
+}
+
+decoration {
+    border-radius: 0.5em 0.5em 0 0;
+    box-shadow:
+        0 0 0 1px alpha(@fg_color, 0.5),
+        0 14px 28px rgba(0, 0, 0, 0.35),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    margin: 12px;
+}
+

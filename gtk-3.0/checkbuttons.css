@@ -1,0 +1,6 @@
+radiobutton radio,
+checkbutton check {
+    border: 1px solid @borders;
+    background-color: @bg_color;
+}
+

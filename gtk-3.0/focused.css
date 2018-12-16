@@ -1,0 +1,4 @@
+:focus {
+    border-color: @colorAccent;
+}
+
