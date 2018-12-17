@@ -4,8 +4,16 @@ spinbutton {
   background-color: @bg_color;
   border: 1px solid @borders;
   border-radius: 0.33em;
+  color: @fg_color;
   font-weight: normal;
   padding: 0.25em;
+  text-shadow: none;
+  -gtk-icon-color: @fg_color;
+  -gtk-icon-shadow: none;
+}
+
+entry image.left {
+    margin-right: 0.5em;
 }
 
 spinbutton {

@@ -1,0 +1,5 @@
+.search-bar {
+  background-color: @alt_bg_color;
+  border-bottom: 1px solid @borders;
+}
+

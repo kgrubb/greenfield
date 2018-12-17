@@ -1,17 +1,32 @@
-.sidebar {
-  background-color: @colorPrimary;
+.sidebar,
+.source-list,
+.sidebar row,
+.source-list row {
+  background-color: @alt_bg_color;
+  color: @fg_color;
+}
+
+.sidebar row:selected,
+.source-list row:selected {
+  background-color: shade(@alt_bg_color, 0.875);
 }
 
 .sidebar row,
 .sidebar .list-row,
 .sidebar-item,
-.sidebar-row {
-  padding: 0 0.5em;
+.sidebar-row,
+.source-list row,
+.source-list .list-row {
+  padding: 0.25em 0.5em;
 }
 
-.sidebar label {
+.sidebar label.
+.source-list label {
   padding: 0.25em;
 }
-.sidebar > frame {
+
+.sidebar > frame
+.source-list > frame {
   border: none;
 }
+

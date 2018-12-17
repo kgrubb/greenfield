@@ -11,7 +11,7 @@ popover,
 
 .titlebar {
   background-color: @colorPrimary;
-  border-bottom: 1px solid @borders;
+  border-bottom: 1px solid shade(@colorPrimary, 0.75);
   border-radius: 0.5em 0.5em 0 0;
   color: @textColorPrimary;
   font-weight: bold;
@@ -29,6 +29,11 @@ popover,
   margin: 0.125em;
 }
 
+.titlebar button.image-button:active,
+.titlebar button.image-button:checked {
+  background-color: shade(@bg_color, 0.875);
+}
+
 .titlebar separator {
   border: none;
   margin: 0;
@@ -39,9 +44,9 @@ popover,
 decoration {
   border-radius: 0.5em 0.5em 0 0;
   box-shadow:
-      0 0 0 1px alpha(@fg_color, 0.5),
-      0 14px 28px rgba(0, 0, 0, 0.35),
-      0 10px 10px rgba(0, 0, 0, 0.22);
+    0 0 0 1px alpha(@fg_color, 0.5),
+    0 14px 28px rgba(0, 0, 0, 0.35),
+    0 10px 10px rgba(0, 0, 0, 0.22);
   margin: 12px;
 }
 

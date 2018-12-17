@@ -16,7 +16,7 @@
 * with the elementary GTK theme. If not, see http://www.gnu.org/licenses/.
 */
 
-@define-color colorPrimary mix(@bg_color, @fg_color, 0.15);
+@define-color colorPrimary @alt_bg_color;
 @define-color colorAccent #09f;
 @define-color colorAccentContrast white;
 @define-color textColorPrimary mix(@colorPrimary, @fg_color, 0.75);

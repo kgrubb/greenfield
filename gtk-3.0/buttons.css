@@ -2,7 +2,7 @@ button,
 switch,
 switch slider {
   background-color: mix(@bg_color, @fg_color, 0.05);
-  border: 1px solid shade(@bg_color, 0.75);
+  border: 1px solid @borders;
   border-radius: 0.33em;
   color: @fg_color;
   font-weight: normal;
@@ -24,11 +24,6 @@ switch slider {
   box-shadow: 0 0 0 1px @borders;
 }
 
-button:active,
-button:checked {
-  background-color: shade(@bg_color, 0.875);
-}
-
 .circular {
   border-radius: 50%;
 }
@@ -44,8 +39,14 @@ button.flat,
   background: transparent;
 }
 
+button:active,
+button:checked {
+  background-color: shade(@bg_color, 0.875);
+}
+
 .suggested-action {
   background-color: @colorAccent;
+  border-color: mix(@colorAccent, @fg_color, 0.25);
   color: @colorAccentContrast;
 }
 
@@ -56,6 +57,7 @@ button.flat,
 
 .destructive-action {
   background-color: @destructive_color;
+  border-color: mix(@destructive_color, @fg_color, 0.25);
   color: @destructive_color_contrast;
 }
 
@@ -63,3 +65,4 @@ button.flat,
 .destructive-action:checked {
   background-color: shade(@destructive_color, 0.9);
 }
+
