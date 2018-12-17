@@ -1,0 +1,18 @@
+toolbar,
+menubar,
+actionbar {
+  background: shade(@bg_color, 0.875);
+  border: 0px solid @borders;
+  padding: 0.25em;
+}
+
+toolbar,
+menubar {
+  border-bottom-size: 1px;
+  -GtkWidget-window-dragging: true;
+}
+
+actionbar {
+  border-top-size: 1px;
+}
+
