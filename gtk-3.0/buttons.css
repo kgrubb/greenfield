@@ -29,14 +29,29 @@ button:checked {
   background-color: shade(@bg_color, 0.875);
 }
 
+.circular {
+  border-radius: 50%;
+}
+
+.flat,
+.inline-toolbar button {
+  border: none;
+}
+
+button.flat,
+.flat button,
+.inline-toolbar button {
+  background: transparent;
+}
+
 .suggested-action {
-  background-color: @accent_color;
-  color: @accent_color_contrast;
+  background-color: @colorAccent;
+  color: @colorAccentContrast;
 }
 
 .suggested-action:active,
 .suggested-action:checked {
-  background-color: shade(@accent_color, 0.9);
+  background-color: shade(@colorAccent, 0.9);
 }
 
 .destructive-action {
@@ -48,14 +63,3 @@ button:checked {
 .destructive-action:checked {
   background-color: shade(@destructive_color, 0.9);
 }
-
-.circular {
-  border-radius: 50%;
-}
-
-.flat,
-.inline-toolbar button {
-  background: transparent;
-  border: none;
-}
-

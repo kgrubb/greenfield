@@ -55,7 +55,8 @@ window.rounded decoration {
     border-bottom-right-radius: 0.33em;
 }
 
-window.flat .titlebar {
+window.flat .titlebar,
+.flat.titlebar {
   background: mix(@bg_color, @fg_color, 0.05);
   border: none;
 }
@@ -63,3 +64,4 @@ window.flat .titlebar {
 .default-decoration {
   padding: 0.25em;
 }
+
