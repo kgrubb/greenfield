@@ -19,7 +19,7 @@
 @define-color colorPrimary mix(@bg_color, @fg_color, 0.15);
 @define-color colorAccent #09f;
 @define-color colorAccentContrast white;
-@define-color textColorPrimary mix (@colorPrimary, @text_color, 0.75);
-@define-color textColorPrimaryShadow alpha (shade (@colorPrimary, 1.4), 0.4);
+@define-color textColorPrimary mix(@colorPrimary, @fg_color, 0.75);
+@define-color textColorPrimaryShadow alpha(shade(@colorPrimary, 1.4), 0.4);
 @define-color tab_base_color @base_color;
 

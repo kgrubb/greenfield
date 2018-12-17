@@ -13,17 +13,27 @@ popover,
   background-color: @colorPrimary;
   border-bottom: 1px solid @borders;
   border-radius: 0.5em 0.5em 0 0;
+  color: @textColorPrimary;
+  font-weight: bold;
   padding: 0.5em;
+  text-shadow: 0 1px @textColorPrimaryShadow;
+  -gtk-icon-shadow: 0 1px @textColorPrimaryShadow;
 }
 
 .titlebar .image-button,
-.titlebar .titlebutton {
-  border: none;
+.titlebar .titlebutton:not(separator) {
   background: transparent;
+  border: none;
+  color: inherit;
+  padding: 0.25em;
+  margin: 0.125em;
 }
 
-.titlebar > separator {
+.titlebar separator {
+  border: none;
+  margin: 0;
   opacity: 0;
+  padding: 0;
 }
 
 decoration {
@@ -35,3 +45,21 @@ decoration {
   margin: 12px;
 }
 
+window.rounded,
+window.rounded actionbar {
+    border-radius: 0 0 0.33em 0.33em;
+}
+
+window.rounded decoration {
+    border-bottom-left-radius: 0.33em;
+    border-bottom-right-radius: 0.33em;
+}
+
+window.flat .titlebar {
+  background: mix(@bg_color, @fg_color, 0.05);
+  border: none;
+}
+
+.default-decoration {
+  padding: 0.25em;
+}

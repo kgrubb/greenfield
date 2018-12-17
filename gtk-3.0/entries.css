@@ -4,6 +4,7 @@ spinbutton {
   background-color: @bg_color;
   border: 1px solid @borders;
   border-radius: 0.33em;
+  font-weight: normal;
   padding: 0.25em;
 }
 
@@ -16,10 +17,15 @@ spinbutton entry:disabled,
 spinbutton entry:focus {
   background: none;
   border: none;
+  padding: 0;
 }
 
 spinbutton.horizontal entry {
-  margin: 0 0.25em;
+  margin: 0 0.5em;
+}
+
+spinbutton.vertical entry {
+  margin: 0.5em 0;
 }
 
 spinbutton button {

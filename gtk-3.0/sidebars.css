@@ -12,3 +12,6 @@
 .sidebar label {
   padding: 0.25em;
 }
+.sidebar > frame {
+  border: none;
+}

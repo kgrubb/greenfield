@@ -1,6 +1,8 @@
 button:disabled,
 switch:disabled,
-entry:disabled {
+entry:disabled,
+checkbutton:disabled,
+radiobutton:disabled {
   opacity: 0.5;
 }
 

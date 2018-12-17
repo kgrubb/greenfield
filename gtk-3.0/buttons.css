@@ -4,12 +4,14 @@ switch slider {
   background-color: mix(@bg_color, @fg_color, 0.05);
   border: 1px solid shade(@bg_color, 0.75);
   border-radius: 0.33em;
-  padding: 0.25em;
+  color: @fg_color;
+  font-weight: normal;
+  padding: 0.33em 0.75em;
 }
 
-.text-button {
-  padding: 0.25em 1em;
-}
+/*.text-button {*/
+/*  padding: 0.25em 1em;*/
+/*}*/
 
 switch,
 switch slider {
@@ -45,5 +47,15 @@ button:checked {
 .destructive-action:active,
 .destructive-action:checked {
   background-color: shade(@destructive_color, 0.9);
+}
+
+.circular {
+  border-radius: 50%;
+}
+
+.flat,
+.inline-toolbar button {
+  background: transparent;
+  border: none;
 }
 

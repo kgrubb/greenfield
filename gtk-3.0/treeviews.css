@@ -1,5 +1,9 @@
+ttreeview header {
+  background: @colorPrimary;
+}
+
 treeview button {
-  background-color: @colorPrimary;
+  background: @colorPrimary;
   border: none;
   border-radius: 0;
   border-bottom: 1px solid @borders;

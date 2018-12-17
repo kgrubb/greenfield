@@ -1,6 +1,7 @@
 /* Theme */
 @define-color bg_color white;
 @define-color fg_color #333;
+@define-color text_color fg_color;
 @define-color destructive_color #d11;
 @define-color destructive_color_contrast white;
 @define-color borders shade(@bg_color, 0.75);
@@ -13,15 +14,27 @@
 @define-color theme_selected_bg_color @colorAccent;
 @define-color theme_selected_fg_color white;
 
+* {
+  /*border: 1px solid alpha(pink, 0.25);*/
+}
+
+.search-bar {
+  background-color: @colorPrimary;
+  border-bottom: 1px solid @borders;
+}
+
 @import url("palette.css");
 @import url("brand.css");
+@import url("text.css");
 
 @import url("decorations.css");
+@import url("views.css");
 @import url("separators.css");
 @import url("buttons.css");
 @import url("entries.css");
 @import url("comboboxes.css");
 @import url("checkbuttons.css");
+@import url("scales.css");
 @import url("treeviews.css");
 @import url("menus.css");
 @import url("notebooks.css");
