@@ -24,6 +24,7 @@
 
 $colorPrimary: $alt_bg_color;
 $colorAccentContrast: white;
-$textColorPrimary: mix($colorPrimary, $fg_color, 0.75);
-$textColorPrimaryShadow: rgba(mix(black, $colorPrimary, 1.4), 0.4);
+$textColorPrimary: mix($colorPrimary, $fg_color, 25%);
+$textColorPrimaryShadow: rgba(255, 255, 255, 0.4) 1px;
+// $textColorPrimaryShadow: alpha(shade(black, $colorPrimary, 1.4), 0.4);
 $tab_base_color: $bg_color;

@@ -1,7 +1,7 @@
 button,
 switch,
 switch slider {
-    background-color: mix($bg_color, $fg_color, 0.05);
+    background-color: mix($bg_color, $fg_color, 95%);
     border: 1px solid $borders;
     border-radius: 0.33em;
     color: $fg_color;
@@ -42,7 +42,7 @@ button:checked {
 
 .suggested-action {
     background-color: $colorAccent;
-    border-color: mix($colorAccent, $fg_color, 0.25);
+    border-color: mix($colorAccent, $fg_color, 75%);
     color: $colorAccentContrast;
 }
 
@@ -53,7 +53,7 @@ button:checked {
 
 .destructive-action {
     background-color: $destructive_color;
-    border-color: mix($destructive_color, $fg_color, 0.25);
+    border-color: mix($destructive_color, $fg_color, 75%);
     color: $destructive_color_contrast;
 }
 

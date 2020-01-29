@@ -5,7 +5,7 @@ menu,
 popover,
 .background,
 .csd {
-    background: mix($bg_color, $fg_color, 0.05);
+    background: mix($bg_color, $fg_color, 95%);
     color: $fg_color;
 }
 
@@ -62,7 +62,7 @@ window.rounded decoration {
 
 window.flat .titlebar,
 .flat.titlebar {
-    background: mix($bg_color, $fg_color, 0.05);
+    background: mix($bg_color, $fg_color, 95%);
     border: none;
 }
 
