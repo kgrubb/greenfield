@@ -1,0 +1,63 @@
+button,
+switch,
+switch slider {
+    background-color: mix($bg_color, $fg_color, 0.05);
+    border: 1px solid $borders;
+    border-radius: 0.33em;
+    color: $fg_color;
+    font-weight: normal;
+    padding: 0.33em 0.75em;
+}
+
+switch,
+switch slider {
+    padding: 0;
+}
+
+switch slider {
+    background-color: shade($bg_color, 0.95);
+    border: none;
+    box-shadow: 0 0 0 1px $borders;
+}
+
+.circular {
+    border-radius: 50%;
+}
+
+.flat,
+.inline-toolbar button {
+    border: none;
+}
+
+button.flat,
+.flat button,
+.inline-toolbar button {
+    background: transparent;
+}
+
+button:active,
+button:checked {
+    background-color: shade($bg_color, 0.875);
+}
+
+.suggested-action {
+    background-color: $colorAccent;
+    border-color: mix($colorAccent, $fg_color, 0.25);
+    color: $colorAccentContrast;
+}
+
+.suggested-action:active,
+.suggested-action:checked {
+    background-color: shade($colorAccent, 0.9);
+}
+
+.destructive-action {
+    background-color: $destructive_color;
+    border-color: mix($destructive_color, $fg_color, 0.25);
+    color: $destructive_color_contrast;
+}
+
+.destructive-action:active,
+.destructive-action:checked {
+    background-color: shade($destructive_color, 0.9);
+}

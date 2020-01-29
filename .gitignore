@@ -1,2 +1,7 @@
 *~
 .goutputstream*
+node_modules
+gtk-3.0
+.storybook
+storybook-static
+.DS_Store

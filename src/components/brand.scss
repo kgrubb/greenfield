@@ -17,9 +17,13 @@
 */
 
 @define-color colorPrimary @alt_bg_color;
-@define-color colorAccent #09f;
 @define-color colorAccentContrast white;
 @define-color textColorPrimary mix(@colorPrimary, @fg_color, 0.75);
 @define-color textColorPrimaryShadow alpha(shade(@colorPrimary, 1.4), 0.4);
 @define-color tab_base_color @base_color;
 
+$colorPrimary: $alt_bg_color;
+$colorAccentContrast: white;
+$textColorPrimary: mix($colorPrimary, $fg_color, 0.75);
+$textColorPrimaryShadow: rgba(mix(black, $colorPrimary, 1.4), 0.4);
+$tab_base_color: $bg_color;

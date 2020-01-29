@@ -1,0 +1,45 @@
+menu separator,
+separator.horizontal {
+    border-top: 1px solid $borders;
+}
+
+separator.vertical {
+    border-left: 1px solid $borders;
+}
+
+paned.vertical > separator {
+    background-image:
+        linear-gradient(
+            to bottom,
+            $borders 1px,
+            transparent 1px
+        );
+    margin-bottom: -7px;
+    min-height: 8px;
+}
+
+paned.horizontal > separator {
+    background-image:
+        linear-gradient(
+            to right,
+            $borders 1px,
+            transparent 1px
+        );
+    margin-right: -7px;
+    min-width: 8px;
+}
+
+frame,
+.frame {
+    border: 1px solid $borders;
+}
+
+frame.flat,
+scrolledwindow viewport.frame,
+.frame.flat {
+    border: none;
+}
+
+.inline-toolbar {
+    border-top: 1px solid $borders;
+}

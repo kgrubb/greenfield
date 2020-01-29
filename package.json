@@ -1,0 +1,35 @@
+{
+  "name": "greenfield",
+  "version": "0.1.0",
+  "description": "Experimental GTK stylesheet from scratch. Inspired in a lot of ways by (and intended to eventually be compatible with) the [elementary OS stylesheet](https://github.com/elementary/stylesheet), but not intended to be a lookalike, replacement, or new version in any way.",
+  "main": "index.js",
+  "scripts": {
+    "test": "stylelint -s scss **/*.scss",
+    "build": "sass -s compressed src/gtk.scss:gtk-3.0/gtk.css src/gtk-dark.scss:gtk-3.0/gtk-dark.css",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cassidyjames/greenfield.git"
+  },
+  "keywords": [
+    "stylesheet",
+    "gtk",
+    "elementary"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cassidyjames/greenfield/issues"
+  },
+  "homepage": "https://github.com/cassidyjames/greenfield#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@storybook/html": "^5.3.9",
+    "babel-loader": "^8.0.6",
+    "sass": "^1.25.0",
+    "stylelint": "^13.0.0"
+  },
+  "dependencies": {}
+}

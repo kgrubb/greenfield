@@ -1,0 +1,56 @@
+/* Default theme */
+@define-color bg_color white;
+@define-color fg_color #333;
+@define-color alt_bg_color mix(@bg_color, @fg_color, 0.15);
+@define-color text_color fg_color;
+@define-color destructive_color #d11;
+@define-color destructive_color_contrast white;
+@define-color borders shade(@bg_color, 0.75);
+@define-color colorAccent #09f;
+
+/* Required by GTK */
+@define-color theme_fg_color @fg_color;
+@define-color theme_text_color @fg_color;
+@define-color theme_bg_color @bg_color;
+@define-color theme_base_color @bg_color;
+@define-color theme_selected_bg_color @colorAccent;
+@define-color theme_selected_fg_color white;
+
+/* Default Theme Color Variables */
+$bg_color: white;
+$fg_color: #333;
+$alt_bg_color: mix($bg_color, $fg_color, 0.15);
+$text_color: $fg_color;
+$destructive_color: #d11;
+$destructive_color_contrast: white;
+$borders: shade($bg_color, 0.75);
+$colorAccent: #09f;
+$theme_selected_bg_color: $colorAccent;
+$theme_selected_fg_color: white;
+
+/* Brand & Palette Colors and Variables */
+@import 'components/brand';
+@import 'components/palette';
+
+/* Other Components */
+@import 'components/text';
+@import 'components/accent';
+@import 'components/decorations';
+@import 'components/views';
+@import 'components/separators';
+@import 'components/toolbars';
+@import 'components/buttons';
+@import 'components/entries';
+@import 'components/comboboxes';
+@import 'components/checkbuttons';
+@import 'components/scales';
+@import 'components/treeviews';
+@import 'components/search-bars';
+@import 'components/menus';
+@import 'components/notebooks';
+@import 'components/sidebars';
+@import 'components/panels';
+@import 'components/selections';
+@import 'components/focused';
+@import 'components/linked';
+@import 'components/disabled';

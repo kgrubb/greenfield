@@ -1,0 +1,64 @@
+check,
+radio {
+    background-color: $bg_color;
+    border: 1px solid $borders;
+    border-radius: 0.33em;
+    min-height: 1.25em;
+    min-width: 1.25em;
+    -gtk-icon-source: none;
+}
+
+menuitem check {
+    background: none;
+    border-color: transparent;
+}
+
+menuitem check:dir(ltr),
+menuitem radio:dir(ltr) {
+    margin-right: 0.25em;
+}
+
+menuitem check:dir(rtl),
+menuitem radio:dir(rtl) {
+    margin-left: 0.25em;
+}
+
+check:checked,
+radio:checked {
+    background-color: $colorAccent;
+    color: $colorAccentContrast;
+    -gtk-icon-shadow: 0 1px 1px shade($colorAccent, 0.85);
+    -gtk-icon-source: -gtk-icontheme("check-active-symbolic");
+}
+
+check:indeterminate,
+radio:indeterminate {
+    -gtk-icon-source: -gtk-icontheme("check-mixed-symbolic");
+}
+
+check:focus,
+radio:focus {
+    border-color: $colorAccent;
+}
+
+check {
+    border-radius: 0.25em;
+}
+
+radio {
+    border-radius: 50%;
+}
+
+radiobutton image:dir(ltr),
+checkbutton image:dir(ltr),
+radiobutton label:dir(ltr),
+checkbutton label:dir(ltr) {
+    margin-left: 0.5em;
+}
+
+radiobutton image:dir(rtl),
+checkbutton image:dir(rtl),
+radiobutton label:dir(rtl),
+checkbutton label:dir(rtl) {
+    margin-right: 0.5em;
+}
