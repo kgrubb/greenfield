@@ -7,7 +7,8 @@
     "test": "stylelint -s scss **/*.scss",
     "build": "sass -s compressed src/gtk.scss:gtk-3.0/gtk.css src/gtk-dark.scss:gtk-3.0/gtk-dark.css",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
   "devDependencies": {
     "@babel/core": "^7.8.3",
     "@storybook/html": "^5.3.9",
+    "@storybook/storybook-deployer": "^2.8.1",
     "babel-loader": "^8.0.6",
     "sass": "^1.25.0",
     "stylelint": "^13.0.0"

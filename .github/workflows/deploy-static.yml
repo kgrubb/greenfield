@@ -1,0 +1,15 @@
+name: Deploy Static Site
+on:
+  push:
+    branches: master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    container:
+      image: node:alpine
+    steps:
+    - uses: actions/checkout@v1
+    - name: deploy static site
+      run: |
+        npm ci
+        npm run deploy-storybook -- --ci --host-token-env-variable=GITHUB_TOKEN
