@@ -6,7 +6,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     container:
-      image: node:alpine
+      image: node
     steps:
     - uses: actions/checkout@v1
     - name: deploy static site
