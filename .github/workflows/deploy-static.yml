@@ -12,4 +12,4 @@ jobs:
     - name: deploy static site
       run: |
         npm ci
-        npm run deploy-storybook -- --ci --host-token-env-variable=GITHUB_TOKEN
+        npm run deploy-storybook -- --ci
