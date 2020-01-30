@@ -13,3 +13,5 @@ jobs:
       run: |
         npm ci
         npm run deploy-storybook -- --ci
+      env:
+        GH_TOKEN: kgrubb:${{ secrets.GH_TOKEN }}
