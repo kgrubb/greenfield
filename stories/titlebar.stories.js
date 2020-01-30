@@ -1,5 +1,5 @@
 import '../gtk-3.0/gtk.css';
-import '../src/icons/icons.css';
+import './icons/icons.css';
 
 export default { title: 'Titlebar' };
 
